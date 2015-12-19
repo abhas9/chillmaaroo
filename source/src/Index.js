@@ -7,7 +7,18 @@ $(document).ready(function () { // change to deviceready after cordova integrati
 	$('#playNow').click(startGame);
 	$('#home').click(showHome);
 	$('#share').click(shareGame);
+	$('#shareScore').click(shareScore);
 });
+
+function shareScore() {
+	$('#gameOverMenu').css('display','none');
+	html2canvas(document.body, {
+	    onrendered: function(canvas) {
+			$('#gameOverMenu').css('display','block');
+	        window.plugins.socialsharing.share('ChillMaaroo: Checkout my highscore', null, canvas.toDataURL(), 'http://ow.ly/W7bh7');
+	    }
+	});
+}
 
 function shareGame() {
 	window.plugins.socialsharing.share('Always stay chill with this ChillMaaroo App:', null, 'https://raw.githubusercontent.com/abhas9/chillmaaroo/master/res/icon.png', 'http://ow.ly/W7bh7');

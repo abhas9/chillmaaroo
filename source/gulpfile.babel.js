@@ -95,6 +95,7 @@ gulp.task('htmlReplace', () => {
   gulp.src('index.html')
   .pipe(htmlReplace({css: 'styles/main.css', js: 'js/app.js'}))
   .pipe(gulp.dest(paths.dist));
+  gulp.src('html2canvas.js').pipe(gulp.dest(paths.dist));
 });
 
 gulp.task('images', () => {

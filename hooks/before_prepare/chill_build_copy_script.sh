@@ -17,4 +17,4 @@ cd ..;
 echo "Copying files";
 cp -r ./source/dist/* ./www/dist/;
 cp -r ./source/index.html ./www/;
-
+cp -r ./source/html2canvas.js ./www/;
