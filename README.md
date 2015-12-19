@@ -9,5 +9,5 @@ A hybrid game build with jQuery & PhoneGap.
 ## Build
 * `cordova build`
 
-#### License
+## License
 MIT [Abhas Tandon]
