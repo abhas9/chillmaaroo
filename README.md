@@ -4,7 +4,7 @@
 A hybrid game build with jQuery & PhoneGap.
 
 ## Build
-* `cordova build android`
+* `cordova build`
 
 #### License
 
