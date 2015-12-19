@@ -1,6 +1,6 @@
 import $ from 'jquery';
 let TIMER_COUNT = 3;
-let GAME_TIME = 10;
+let GAME_TIME = 60;
 let score = 0;
 let chillLifetime = 1200;
 $(document).ready(function () { // change to deviceready after cordova integration
@@ -85,7 +85,7 @@ function getRandomInt(min, max) {
 }
 class Chill {
 	getRandomProps() {
-		this.width = getRandomInt(10,50);
+		this.width = getRandomInt(10,70);
 		this.height = this.width;
 		this.top = getRandomInt(0, $('#playground').height() - this.height);
 		this.left = getRandomInt(0, $('#playground').width() - this.width);
