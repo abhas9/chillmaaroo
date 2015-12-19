@@ -1,0 +1,5 @@
+platforms/android
+source/node_modules
+source/.tmp
+source/.idea
+source/dist

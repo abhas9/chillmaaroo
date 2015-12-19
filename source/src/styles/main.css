@@ -1,0 +1,138 @@
+body {
+  font-family: 'Courier new';
+  color: #56FF00;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+.responsive {
+    max-width: 100%;
+    height: 100%;
+}
+#app {
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  overflow: auto;
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.screen {
+  display: none;
+}
+.screen.active {
+  display: block;
+}
+#logo {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 2%;
+  text-align: center;
+}
+#sideImage {
+  text-align: center;
+  top: 25%;
+  width: 100%;
+  height: 20%;
+  z-index: 1;
+  position: absolute;
+}
+#gameMenu {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align:center;
+  right: 0px;
+  list-style: none;
+  font-size: 6vh;
+}
+#counter #count {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top:20%;
+  font-size: 4.5em;
+  text-align: center;
+}
+#gameMenu li {
+  cursor: pointer;
+}
+#bottomImage {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 30%;
+  right: 0px;
+}
+#chillmeter {
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  overflow: hidden;
+  background-color: #1119FF;
+}
+#chillmeter .inner, #finalChillmeter .inner {
+  height: 1000px;
+  background: #ff0800; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ff0800 0%, #11def9 48%, #1119ff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ff0800 0%,#11def9 48%,#1119ff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ff0800 0%,#11def9 48%,#1119ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0800', endColorstr='#1119ff',GradientType=0 ); /* IE6-9 */
+}
+#chillmeter #score, #finalChillmeter #finalScore{
+  font-size: 3em;
+  line-height: 100%;
+  top: 15%;
+  position: absolute;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+#timer {
+  height: 10%;
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  font-size: 1.5em;
+}
+#playground {
+  height: 70%;
+  width: 100%;
+  top: 10%;
+  position: absolute;
+}
+#message {
+  width: 100%;
+  position: absolute;
+  top:20%;
+  font-size: 2.5em;
+  text-align: center;
+}
+#finalScoreWrp {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  text-align: center;
+  top:40%;
+  overflow: hidden;
+  background-color: #1119FF;
+}
+#gameOverMenu {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  text-align:center;
+  right: 0px;
+  list-style: none;
+  font-size: 2.5em;
+}
+#gameOverMenu li {
+  cursor: pointer;
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>ChillMaaroo</title>
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div id="app" data-screen="welcome">
+      <div id="welcome" class="screen active">
+        <div id="logo">
+          <img src="dist/images/chill.jpg" class="responsive" />
+        </div>
+        <div id="sideImage">
+          <img src="dist/images/gun.jpg" class="responsive" />
+        </div>
+        <ul id="gameMenu">
+          <li id="playNow">[PLAY NOW]</li>
+          <li id="credits">[CREDITS]</li>
+        </ul>
+        <div id="bottomImage">
+          <img src="dist/images/tshirt.jpg" class="responsive" />
+        </div>
+      </div>
+      <div id="counter" class="screen">
+        <div id="count"></div>
+      </div>
+      <div id="game" class="screen">
+        <div id="timer"></div>
+        <div id="playground"></div>
+        <div id="chillmeter">
+          <div id="score" class="score"></div>
+          <div id="inner" class="inner"></div>
+        </div>
+      </div>
+      <div id="gameOver" class="screen">
+        <div id="message">Your chill level is: </div>
+        <div id="finalScoreWrp">
+          <div id="finalChillmeter">
+            <div id="finalScore"></div>
+            <div class="inner"></div>
+          </div>
+        </div>
+        <ul id="gameOverMenu">
+          <li id="home">[BACK TO HOME]</li>
+          <li>[SHARE SCORE]</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- build:js -->
+    <script src="dist/js/app.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
