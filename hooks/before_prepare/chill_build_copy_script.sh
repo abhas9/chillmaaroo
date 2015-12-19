@@ -2,6 +2,7 @@
 
 echo "Building source.";
 cd ./source/;
+npm install;
 gulp build;
 
 cd ../;
