@@ -6,7 +6,12 @@ let chillLifetime = 1200;
 $(document).ready(function () { // change to deviceready after cordova integration
 	$('#playNow').click(startGame);
 	$('#home').click(showHome);
+	$('#share').click(shareGame);
 });
+
+function shareGame() {
+	window.plugins.socialsharing.share('Always stay chill with this ChillMaaroo App:', null, 'https://raw.githubusercontent.com/abhas9/chillmaaroo/master/res/icon.png', 'http://ow.ly/W7bh7');
+}
 
 function startGame() {
 	showCounter(TIMER_COUNT).done(initGameScreen);
