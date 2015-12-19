@@ -4,4 +4,7 @@ source/.tmp
 source/.idea
 source/dist
 www/dist
+www/dist/js/
+www/dist/styles
+www/html2canvas.js
 www/index.html

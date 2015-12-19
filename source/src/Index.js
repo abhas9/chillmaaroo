@@ -7,8 +7,14 @@ $(document).ready(function () { // change to deviceready after cordova integrati
 	$('#playNow').click(startGame);
 	$('.home').click(showHome);
 	$('#share').click(shareGame);
+	$('#credits').click(showCredits);
 	$('#shareScore').click(shareScore);
 });
+
+function showCredits() {
+	$('.screen.active').removeClass('active');
+	$('#creditsWrp').addClass('active');
+}
 
 function shareScore() {
 	$('#gameOverMenu').css('display','none');
