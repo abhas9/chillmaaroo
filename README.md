@@ -1,5 +1,4 @@
 #ChillMaaroo
-==============
 
 A hybrid game build with jQuery & PhoneGap.
 
