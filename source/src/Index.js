@@ -21,13 +21,13 @@ function shareScore() {
 	html2canvas(document.body, {
 	    onrendered: function(canvas) {
 			$('#gameOverMenu').css('display','block');
-	        window.plugins.socialsharing.share('ChillMaaroo: Checkout my highscore', null, canvas.toDataURL(), 'http://ow.ly/W7bh7');
+	        window.plugins.socialsharing.share('ChillMaaroo: Checkout my highscore', null, canvas.toDataURL(), 'http://tiny.cc/chillapp');
 	    }
 	});
 }
 
 function shareGame() {
-	window.plugins.socialsharing.share('Always stay chill with this ChillMaaroo App:', null, 'https://raw.githubusercontent.com/abhas9/chillmaaroo/master/res/icon.png', 'http://ow.ly/W7bh7');
+	window.plugins.socialsharing.share('Always stay chill with this ChillMaaroo App:', null, 'https://raw.githubusercontent.com/abhas9/chillmaaroo/master/res/icon.png', 'http://tiny.cc/chillapp');
 }
 
 function startGame() {
