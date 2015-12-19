@@ -3,3 +3,5 @@ source/node_modules
 source/.tmp
 source/.idea
 source/dist
+www/dist
+www/index.html
