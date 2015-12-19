@@ -108,7 +108,7 @@ body {
   top: 10%;
   position: absolute;
 }
-#message {
+#message, #creditsMsg {
   width: 100%;
   position: absolute;
   top:20%;
@@ -124,7 +124,7 @@ body {
   overflow: hidden;
   background-color: #1119FF;
 }
-#gameOverMenu {
+#gameOverMenu, #creditsMenu {
   position: absolute;
   bottom: 0%;
   width: 100%;
@@ -133,6 +133,6 @@ body {
   list-style: none;
   font-size: 2.5em;
 }
-#gameOverMenu li {
+#gameOverMenu li, #creditsMenu li {
   cursor: pointer;
 }

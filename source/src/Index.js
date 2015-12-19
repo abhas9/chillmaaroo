@@ -5,7 +5,7 @@ let score = 0;
 let chillLifetime = 1200;
 $(document).ready(function () { // change to deviceready after cordova integration
 	$('#playNow').click(startGame);
-	$('#home').click(showHome);
+	$('.home').click(showHome);
 	$('#share').click(shareGame);
 	$('#shareScore').click(shareScore);
 });
