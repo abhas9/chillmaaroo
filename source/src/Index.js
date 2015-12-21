@@ -37,33 +37,35 @@ function startGame() {
 function showCounter(total) {
 	$('.screen.active').removeClass('active');
 	$('#counter').addClass('active');
-	let defer = $.Deferred(), i = total;
+	let i = total;
 	$('#counter #count').html(`[${i}]`);
-	let interval = setInterval(() => {
-		i--;
-		if (i > 0) {
-			$('#counter #count').html(`[${i}]`);
-		} else if (i === 0) {
-			$('#counter #count').html('[CHILL]');
-		} else if (i < 0) {
-			defer.resolve();
-			clearInterval(interval)
-		} 
-	},1000);
-	return defer;
+	return new Promise((resolve) => {
+  	let interval = setInterval(() => {
+  		i--;
+  		if (i > 0) {
+  			$('#counter #count').html(`[${i}]`);
+  		} else if (i === 0) {
+  			$('#counter #count').html('[CHILL]');
+  		} else if (i < 0) {
+  			resolve();
+  			clearInterval(interval);
+  		} 
+  	},1000);
+	});
 }
 function initGameTimer() {
 	let timeRemaining = GAME_TIME
 	$('#timer').html(`[${timeRemaining}]`);
-	let defer = $.Deferred();
-	let interval = setInterval(() => {
-		timeRemaining--;
-		$('#timer').html(`[${timeRemaining}]`);
-		if (timeRemaining === 0) {
-			defer.resolve();
-			clearInterval(interval);
-		}
-	}, 1000)
+	return new Promise((resolve) => {
+  	let interval = setInterval(() => {
+  		timeRemaining--;
+  		$('#timer').html(`[${timeRemaining}]`);
+  		if (timeRemaining === 0) {
+  			resolve();
+  			clearInterval(interval);
+  		}
+  	}, 1000);
+	})
 	return defer;
 }
 function showFinalScore() {
