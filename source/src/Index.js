@@ -47,8 +47,8 @@ function showCounter(total) {
   		} else if (i === 0) {
   			$('#counter #count').html('[CHILL]');
   		} else if (i < 0) {
-  			resolve();
   			clearInterval(interval);
+  			resolve();
   		} 
   	},1000);
 	});
@@ -61,8 +61,8 @@ function initGameTimer() {
   		timeRemaining--;
   		$('#timer').html(`[${timeRemaining}]`);
   		if (timeRemaining === 0) {
-  			resolve();
   			clearInterval(interval);
+  			resolve();
   		}
   	}, 1000);
 	})
